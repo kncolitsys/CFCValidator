@@ -1,0 +1,1 @@
+<cfloop from="1" to="9" index="i"><cfoutput>&nbsp;<a href="example#i#.cfm">Example #i#</a>&nbsp;|</cfoutput></cfloop>

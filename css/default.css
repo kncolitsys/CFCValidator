@@ -1,0 +1,66 @@
+body { font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333;
+	background-color: #fff;
+	margin: 20px 0 0 20px;
+}
+
+a:link, a:active {font-size: 1em; color: #0000ff; text-decoration: none;}
+a:visited {font-size: 1em; color: #0000ff; text-decoration: none;}	
+a:hover {font-size: 1em; color: #0000ff; text-decoration: underline;}
+
+label{
+	   font-family: Arial, Sans-Serif;
+	   color: #000;
+       font-size: 13px;
+       font-weight: bold;
+}
+
+input{
+	   font-family: Arial, Sans-Serif;
+	   color: #000;
+	   background-color: #ffff99;	
+	   font-size: 13px;
+	   margin-bottom: 5px;
+	   display: block;
+	   padding: 4px;	
+	   width: 300px;
+}
+
+.errorField{
+         border:solid 2px #FF0000;  
+         background:#EFF5FF;  
+         color:#000;  
+}
+
+.focusField{  
+         border:solid 2px #73A6FF;  
+         background:#EFF5FF;  
+         color:#000;  
+}  
+
+.idleField{  
+         background:#EEE;  
+         color: #000;  
+         border: solid 2px #999;  
+}
+  
+.submitbtn{
+	    font-family: Arial, Sans-Serif;
+	   color: #000;
+	   background-color: #99bbcc;
+	    font-size: 13px;
+	    margin-bottom: 5px;
+	    display: block;
+	    padding: 4px;	
+	    width: 300px;
+}
+
+.error {
+		font-weight: none;
+		font-size: 0.9em;
+		color: #ff0000;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+}
+

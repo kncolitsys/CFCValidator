@@ -1,0 +1,8 @@
+<!-- Fairly simple example, note the optional enabled attribute to turn off the entire library or a specific mapping-->
+
+<mappings name="Optional Example Mapping List" enabled="false">
+
+	<mapping name="fieldname1">Translation1</mapping>
+	<mapping name="fieldname2" enabled="false">Translation2</mapping>
+
+</mappings>

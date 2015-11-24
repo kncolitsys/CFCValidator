@@ -1,0 +1,12 @@
+<beans>
+
+<bean id="Postalcodes" class="thor.com.fusionlink.libraries.Postalcodes" />
+
+<bean id="BasicValidators" class="thor.com.fusionlink.libraries.BasicValidators" />
+
+<bean id="Thor" class="thor.com.fusionlink.Thor">
+	<property name="import"><ref bean="Postalcodes" /></property>
+	<property name="import"><ref bean="BasicValidators" /></property>
+</bean>
+	
+</beans>

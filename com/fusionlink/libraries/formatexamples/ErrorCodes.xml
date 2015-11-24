@@ -1,0 +1,7 @@
+<!-- Fairly simple example, note the optional enabled attribute to turn off the entire library or a specific error code-->
+
+<errorcodes name="Sample Error Codes" enabled="false">
+	<errorcode name="zipcode">Not a valid Zip Code</errorcode>
+	<errorcode name="postalcode">Not a valid Postal Code</errorcode>
+	<errorcode name="firstname" enabled="false">Not a valid String</errorcode>
+</errorcodes>

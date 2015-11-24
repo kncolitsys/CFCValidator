@@ -1,0 +1,27 @@
+<!-- Note the optional enabled attribute to turn off the entire library or a specific error code-->
+
+<validators name="Example of XML based Validators" enabled="true">
+
+	<!-- Mappings are optional or can be a separate xml doc - in this case we map any field name called ethdevice to Ethernet for implicit validation-->
+	<mappings name="MyMappings">
+		<mapping name="ethdevice">Ethernet</mapping>
+	</mappings>
+
+	<!-- Error codes are optional or can be a separate xml doc-->
+	<errorcodes name="A custom error code for an implicit validation of ethdevice">
+		<errorcode name="ethdevice">EthernetDevice</errorcode>
+	</errorcodes>
+
+	<!--You can have as many validators in a XML file as you like - best to group them by topic. A validator must start with 'is' in the name-->
+	<validator name="isEthernetDevice">
+		<regex><![CDATA[^(eth[0-9]$)|(^eth[0-9]:[1-9]$)]]></regex>
+		<errorCode>Not a valid linux ethernet device name</errorCode>
+	</validator>
+
+	<!-- Just a silly example to show the optional enable attribute to turn off a specific validator-->
+	<validator name="isAthernetDevice" enabled="false>
+		<regex><![CDATA[^(eth[0-9]$)|(^eth[0-9]:[1-9]$)]]></regex>
+		<errorCode>Not a valid linux Athernet device name</errorCode>
+	</validator>
+	
+</validators>
